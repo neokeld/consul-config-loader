@@ -1,7 +1,7 @@
 version: '2'
 services:
     consul:
-        image: consul:1.8.3
+        image: consul:1.9
         ports:
             - 8300:8300
             - 8500:8500
@@ -13,8 +13,6 @@ services:
         volumes:
             - ./config/:/config
         environment:
-            - CONFIG_MODE=filesystem
-            #- CONFIG_MODE=git
             - INIT_SLEEP_SECONDS=5
             - CONSUL_URL=consul
             - ENABLE_SPRING=true

@@ -3,6 +3,6 @@ os:
 services:
   - docker
 install:
-  - docker build -t jhipster/consul-config-loader:travis .
+  - docker build -t neokeld/consul-config-loader:travis .
 script:
   - docker images
